@@ -1,0 +1,97 @@
+/* Section container */
+.about {
+  padding: 80px 0;
+  background: #f9fafb;
+}
+.about-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 40px;
+  position: relative;
+}
+.about-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #2563eb;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+/* Heading always on top */
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.about-header h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #2563eb;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Flex layout for text + image */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Text part */
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Image part */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Stats below text */
+.about-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: #2563eb;
+  margin: 0;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 1rem;
+  color: #4b5563;
+}

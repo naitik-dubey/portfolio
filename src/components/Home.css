@@ -1,0 +1,62 @@
+/* src/components/Home.css */
+
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+  background: linear-gradient(90deg, #f3e8ff, #dbeafe);
+}
+
+#home h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+#home h1 span {
+  color: #2563eb; /* Blue highlight */
+}
+
+#home p {
+  font-size: 1.25rem;
+  color: #4b5563;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+#home p span {
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+#home a {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#home a:hover {
+  transform: scale(1.05);
+  background: #1e40af;
+}
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}

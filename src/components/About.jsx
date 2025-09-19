@@ -45,6 +45,7 @@ const About = () => {
               src="https://www.bing.com/ck/a?!&&p=25572313747e55f355f48fe542a35d71f4ede0af722d6bbdea2ff5ef432f2568JmltdHM9MTc1Njk0NDAwMA&ptn=3&ver=2&hsh=4&fclid=34b5e4a1-df4d-6738-119c-f7e5dea566f0&u=a1L2ltYWdlcy9zZWFyY2g_cT1hYm91dCt1cytpbWFnZXMmaWQ9Mjk5NEU0MEQ1OUNGQTE2Mjk4MjBCRDY4Njc1RURBN0NGQTUxRTA1QSZGT1JNPUlBQ0ZJUg&ntb=1"
               alt="Naitik Dubey"
             />
+            <h3 className="about-name">Naitik Dubey</h3>
           </div>
         </div>
       </div>

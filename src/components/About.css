@@ -1,8 +1,10 @@
 /* Section container */
 .about {
   padding: 80px 0;
-  background: #f9fafb;
+  background: #ffffff; /* Yellow background */
 }
+
+/* Main heading */
 .about-heading {
   text-align: center;
   font-size: 2.8rem;
@@ -11,6 +13,7 @@
   margin-bottom: 40px;
   position: relative;
 }
+
 .about-heading::after {
   content: "";
   display: block;
@@ -20,7 +23,8 @@
   margin: 10px auto 0;
   border-radius: 2px;
 }
-/* Heading always on top */
+
+/* Heading always on top (optional secondary header) */
 .about-header {
   text-align: center;
   margin-bottom: 40px;
@@ -29,7 +33,7 @@
 .about-header h2 {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #0f448e;
   margin: 0;
   position: relative;
   display: inline-block;
@@ -51,7 +55,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* stack on small screens */
 }
 
 /* Text part */
@@ -62,11 +66,14 @@
   color: #374151;
 }
 
-/* Image part */
+/* Image + Name part */
 .about-image {
   flex: 1;
   display: flex;
+  flex-direction: column; /* Stack image and name */
+  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .about-image img {
@@ -74,20 +81,49 @@
   width: 280px;
   height: 280px;
   object-fit: cover;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(206, 20, 20, 0.15);
+  margin-bottom: 15px; /* gap between image and name */
 }
 
-/* Stats below text */
+/* Name under image */
+.about-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+  position: relative;
+}
+
+.about-name::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #2563eb;
+  margin: 6px auto 0;
+  border-radius: 2px;
+}
+
+/* Stats section */
 .about-stats {
   display: flex;
   gap: 30px;
   margin-top: 20px;
 }
 
+.stat {
+  background: #ffffff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 120px;
+}
+
 .stat h3 {
   font-size: 2rem;
   color: #2563eb;
-  margin: 0;
+  margin: 0 0 8px 0;
 }
 
 .stat p {
